@@ -1,0 +1,29 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "This is a test for git.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "formidable": "^1.2.1",
+    "mongodb": "^3.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flyhom/GitTest.git"
+  },
+  "author": "flyhom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flyhom/GitTest/issues"
+  },
+  "homepage": "https://github.com/flyhom/GitTest#readme"
+}
