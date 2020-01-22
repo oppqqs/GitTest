@@ -40,8 +40,6 @@ function Square(props) {
     }
   }
 
-
-
   class Game extends React.Component {
     constructor(props) {
       super(props);
@@ -110,6 +108,7 @@ function Square(props) {
           </div>
         </div>
       );
+      
     }
   }
 
@@ -135,6 +134,8 @@ function Square(props) {
   }
 
   // ========================================
+
+ 
 
   ReactDOM.render(
     <Game />,
