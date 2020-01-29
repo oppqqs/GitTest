@@ -1,0 +1,54 @@
+.control_block {
+    margin-top: 8px;
+    background-color: #616161;
+    padding: 12px 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-radius: 4px;
+}
+
+.control_block button {
+    font-size: 16px;
+    width: 100px;
+    padding: 5px;
+    color: #ffffff;
+    display: inline-block;
+    background-color: #f83232;
+    transition: 0.3s;
+    font-weight: 800;
+    text-decoration: none;
+    border: 0.2em solid #f83232;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+}
+
+.control_block button:hover {
+    background-color: #dd1919;
+    border: 0.2em solid #dd1919;
+}
+
+.dashboard input {
+    display: block;
+    /* width: 250px; */
+    width: 100%;
+    font-size: 15px;
+    margin: 8px 0;
+    padding: 4px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    transition: border, box-shadow .3s;
+    text-align: center;
+}
+
+.dashboard input:focus {
+    border: 1px solid #b0deff;
+    box-shadow: 0 0 5px #b0deff;
+}
+
+.product_intro {
+    height: 100px;
+}

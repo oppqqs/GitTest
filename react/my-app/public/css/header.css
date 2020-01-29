@@ -1,0 +1,58 @@
+html,
+* {
+    font-family: 微軟正黑體 !important;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #e2e2e2;
+    padding-left: 18px;
+    padding-right: 18px;
+    position: fixed;
+    z-index: 2;
+}
+
+header .logo img {
+    height: 70px;
+    width: 140px;
+    float: left;
+}
+
+.menu_left {
+    float: left;
+    margin-left: 16px;
+}
+
+.menu_left .menu_item {
+    float: left;
+}
+
+.menu_right {
+    float: right;
+}
+
+.menu_right .menu_item {
+    float: left;
+}
+
+.menu_item {
+    padding: 24px;
+    font-size: 16px;
+}
+
+a.menu_item {
+    text-decoration: none;
+    transition: background-color .3s;
+    color: rgb(88, 88, 88);
+}
+
+a.menu_item:hover {
+    color: rgb(0, 0, 0);
+}

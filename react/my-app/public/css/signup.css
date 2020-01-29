@@ -1,0 +1,92 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.signup{
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px #dcdcdc;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.container>*{
+    /* text-align: center; */
+}
+
+
+.container {
+    width: 1200px;
+    padding-top: 108px;
+}
+
+
+.input_text{
+    font-size: 16px;
+
+}
+
+input {
+    display: block;
+    /* width: 250px; */
+    width: 100%;
+    font-size: 15px;
+    margin: 8px 0;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    transition: border,box-shadow .3s;
+}
+
+input:focus{
+    border: 1px solid #b0deff;
+    box-shadow: 0 0 5px #b0deff;
+}
+
+.signup_btn button{
+    margin-top: 16px;
+    font-size: 18px;
+    width: 100%;
+    padding: 5px;
+    color: #d7fcdb;
+    display: inline-block;
+    background-color: #1ed62f;
+    transition: 0.3s;
+    font-weight: 800;
+    text-decoration: none;
+    border: 0.2em solid #1ed62f;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+}
+
+.signup_btn button:hover{
+    background-color: #14b324;
+    border: 0.2em solid #14b324;
+}
+
+.options{
+    padding-top: 16px;
+    background-color: #fff;
+}
+
+.options a{
+    text-decoration: none;
+    width: 100%;
+    color: #888;
+    transition: color .3s;
+    font-size: 16px;
+}
+.options a:hover{
+    color: #f84545;
+}
+
+.options .signup_btn{
+    text-align: left;
+}
+.options .fogot_pass{
+    text-align: right;
+}

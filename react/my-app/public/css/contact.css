@@ -1,0 +1,107 @@
+.container {
+    width: 1200px;
+    padding-top: 108px;
+    padding-bottom: 48px;
+}
+
+.title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.dashboard hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #cccccc;
+}
+
+.member_info {
+    box-shadow: 5px 5px 10px #e3e3e3;
+    padding: 24px;
+    padding-bottom: 50px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: rgb(126, 126, 126);
+}
+
+.manage_list {
+    box-shadow: 5px 5px 10px #e3e3e3;
+    padding: 24px;
+    padding-bottom: 50px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: rgb(126, 126, 126);
+}
+
+
+/* Start dashboard table */
+
+.dashboard .title {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.dashboard .content {
+    font-size: 20px;
+    text-align: center;
+}
+
+.dashboard .FB_url {
+    text-align: center;
+}
+
+.dashboard .fa {
+    text-align: center;
+}
+
+.FB_url {
+    margin-top: 40px;
+}
+
+.FB_url a {
+    font-size: 30px;
+    width: 200px;
+    padding: 5px;
+    color: #ffffff;
+    display: inline-block;
+    background-color: rgb(74, 110, 189);
+    transition: 0.3s;
+    font-weight: 800;
+    text-decoration: none;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.FB_url a:hover {
+    background: #3B5998;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    transition: 0.3s;
+    font-size: 32px;
+    width: 72px;
+    opacity: 0.7;
+    background-color: rgb(74, 110, 189);
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+
+/* End dashboard table*/

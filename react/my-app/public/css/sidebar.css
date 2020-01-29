@@ -1,0 +1,36 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 70px;
+    padding: 24px;
+    width: 350px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    width: 100%;
+    color: rgb(80, 80, 80);
+    padding-left: 12px;
+    font-weight: 900;
+}
+
+.sidebar .sidebar_item a {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 16px;
+    color: rgb(122, 122, 122);
+    transition: background-color .3s;
+    /* border-right: 5px solid transparent; */
+}
+
+.sidebar .sidebar_item a:hover {
+    /* border-color: rgb(216, 216, 216); */
+    background-color: rgb(243, 243, 243);
+}
+
+.sidebar hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px solid #e0e0e0;
+}

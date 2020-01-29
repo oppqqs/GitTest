@@ -1,0 +1,6 @@
+training2@quantr.hk
+P@ssw0rd123
+gulp serve --nobrowser
+_layouts/15/workbench.aspx
+
+https://quantr.sharepoint.com/training2/_layouts/15/workbench.aspx

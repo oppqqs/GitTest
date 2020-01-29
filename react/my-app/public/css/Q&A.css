@@ -1,0 +1,62 @@
+.container {
+    width: 1200px;
+    padding-top: 108px;
+    padding-bottom: 48px;
+}
+
+.title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.dashboard hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #cccccc;
+}
+
+.member_info {
+    box-shadow: 5px 5px 10px #e3e3e3;
+    padding: 24px;
+    padding-bottom: 50px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: rgb(126, 126, 126);
+}
+
+.manage_list {
+    box-shadow: 5px 5px 10px #e3e3e3;
+    padding: 24px;
+    padding-bottom: 50px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: rgb(126, 126, 126);
+}
+
+
+/* Start dashboard table */
+
+.dashboard .title {
+    font-size: 24px;
+}
+
+.dashboard .question {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.dashboard table {
+    border-collapse: collapse;
+    /* table-layout: fixed; */
+    width: 100%;
+}
+
+.green:hover {
+    transition: .3s;
+    background-color: #e0ffe6;
+    cursor: pointer;
+}
+
+
+/* End dashboard table*/

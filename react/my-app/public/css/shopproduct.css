@@ -1,0 +1,183 @@
+ul li {
+    list-style-type: none;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.flexrowcenter {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexcolumncenter {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop {
+    margin: 0px auto;
+    padding: 15px;
+    width: 90%;
+    height: 900px;
+    /* text-align: center; */
+}
+
+.list {
+    margin: 0px auto;
+    border: 0px auto;
+    padding: 0px auto;
+    width: 20%;
+    height: 50%;
+    background-color: white;
+    float: left;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    width: 75%;
+    height: 100%;
+    /* padding: 5px; */
+    background-color: white;
+    /* row | row-reverse | column | column-reverse */
+    flex-direction: column;
+    float: right;
+    /* flex-wrap: nowrap | wrap | wrap-reverse; */
+    flex-wrap: wrap;
+    /* align-content: flex-start | flex-end | center | space-between | space-around | stretch; */
+    align-content: center;
+    /* justify-content: flex-start | flex-end | center | space-between | space-around; */
+    justify-content: flex-start;
+}
+
+.item {
+    /* flex: 1; */
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    width: 90%;
+    /* height: 30%; */
+    margin: 5px auto;
+    padding: 0 auto;
+    display: flex;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item2 {
+    /* flex: 1; */
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    width: 90%;
+    /* height: 50%; */
+    margin: 5px auto;
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    display: flex;
+    text-align: center;
+}
+
+.shopleftflex {
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0%; */
+    width: 50%;
+    /* align-items: center; */
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shoprightflex {
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0%; */
+    width: 50%;
+    float: right;
+}
+
+.shopimg {
+    /* width: 80%;
+    height: 80%; */
+    float: center;
+    align-items: center;
+}
+
+.a_shoplist {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    color: black;
+}
+
+.a_shoplist a:link,
+a:visited,
+a:hover,
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.shoplistli {
+    text-align: center;
+}
+
+.shoptextup {
+    text-align: center;
+}
+
+.shoptextcenter1 {
+    text-align: center;
+    font-size: 24px;
+    color: #00FF37;
+}
+
+.shoptextcenter2 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.shoptextdown {
+    align-items: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartbutton {
+    background-color: #FF0400;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+;
