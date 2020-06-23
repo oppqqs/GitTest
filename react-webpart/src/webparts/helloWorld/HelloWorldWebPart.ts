@@ -11,8 +11,14 @@ import * as strings from 'HelloWorldWebPartStrings';
 import HelloWorld from './components/HelloWorld';
 import { IHelloWorldProps } from './components/IHelloWorldProps';
 
+// import { SPHttpClient, SPHttpClientResponse, ISPHttpClientOptions } from '@microsoft/sp-http';
+
 export interface IHelloWorldWebPartProps {
   description: string;
+  // getContacts():Promise<Contact[]>;
+  // saveContact(contact:Contact):Promise<Contact[]>;
+  // deleteContact(contact:Contact): Promise<Contact[]>;
+  // addContact():Promise<Contact[]>;
 }
 
 export default class HelloWorldWebPart extends BaseClientSideWebPart <IHelloWorldWebPartProps> {

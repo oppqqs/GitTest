@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3 class="flb"><em id="returnmessage">用户登录</em><span><a href="javascript:;" class="flbc" onclick="hideWindow('login')" title="关闭">关闭</a></span></h3>
+    <div id="succeedmessage" class="c cl" style="display:none"></div>
+    <form id="form1" name="form1" method="post" onsubmit="javascript:$('form1').action='http://bbs.anjian.com/login.aspx?infloat=1&';ajaxpost('form1', 'returnmessage', 'returnmessage', 'onerror');return false;" action="http://bbs.anjian.com/login.aspx?infloat=1&">
+        <div class="c cl">
+            <div style="overflow:hidden;overflow-y:auto" class="lgfm">
+                <p>您可以使用用户名登录</p>
+                <div class="sipt lpsw"> <label for="username" onclick="document.form1.username.focus();">用户名　：</label> <input type="text" class="txt" tabindex="1" value="" maxlength="20" size="25" autocomplete="off" name="username" id="username" /> </div>
+                <div class="sipt lpsw">
+                <label for="password3">密　码　：</label> <input type="password" tabindex="2" class="txt" size="36" name="password" id="password3" /> </div>
+                <div class="ftid sltp" style="margin-bottom:10px"> <select name="question" id="question" change="changequestion();" tabindex="1003"> <option value="0">安全提问</option> <option onclick="loadselect_liset('question', 0, 'question','1',this.innerHTML, 1)" value="1" k_id="question">母亲的名字</option> <option onclick="loadselect_liset('question', 0, 'question','2',this.innerHTML, 2)" value="2" k_id="question">爷爷的名字</option> <option onclick="loadselect_liset('question', 0, 'question','3',this.innerHTML, 3)" value="3" k_id="question">父亲出生的城市</option> <option onclick="loadselect_liset('question', 0, 'question','4',this.innerHTML, 4)" value="4" k_id="question">您其中一位老师的名字</option> <option onclick="loadselect_liset('question', 0, 'question','5',this.innerHTML, 5)" value="5" k_id="question">您个人计算机的型号</option> <option onclick="loadselect_liset('question', 0, 'question','6',this.innerHTML, 6)" value="6" k_id="question">您最喜欢的餐馆名称</option> <option onclick="loadselect_liset('question', 0, 'question','7',this.innerHTML, 7)" value="7" k_id="question">驾驶执照的最后四位数字</option> </select>
+                    <script type="text/javascript">
+                        simulateSelect('question', '214');
+                    </script>
+                    <script type="text/javascript">
+                        window.onload = function() {
+                            setselect(0);
+                        }
+
+                        function changequestion() {
+                            if ($('question').getAttribute("selecti") != "0") {
+                                $('answer').style.display = '';
+                                $('answer').focus();
+                            } else {
+                                $('answer').style.display = 'none';
+                            }
+                        }
+
+                        function setselect(value) {
+                            try {
+                                var questionarray = new Array('安全提问', '母亲的名字', '爷爷的名字', '父亲出生的城市', '您其中一位老师的名字', '您个人计算机的型号', '您最喜欢的餐馆名称', '驾驶执照的最后四位数字');
+                                $('question').setAttribute("selecti", value);
+                                $('question').options[0].value = value;
+                                $('question_ctrl').innerHTML = questionarray[value];
+                                changequestion();
+                            } catch (e) {}
+                        }
+                    </script>
+                </div>
+                <div class="sltp" style="clear:both;"><input type="text" tabindex="1004" class="txt" size="36" autocomplete="off" style="display: none;" id="answer" name="answer" /></div>
+                <div class="sltp" style="display:none"> <label for="templateid">界面风格</label> <select name="templateid" tabindex="13"> <option value="0">- 使用默认 -</option> <li><a onclick="window.location.href='/showtemplate.aspx?templateid=1';return false;" href="###">Default</a></li> </select>                    </div>
+            </div>
+            <div class="lgf">
+                <h4>没有帐号？ <a href="http://bbs.anjian.com/register.aspx" onclick="hideWindow('login');showWindow('register', this.href);" class="xg2">立即注册</a> </h4>
+                <p> <a href="http://bbs.anjian.com/getpassword.aspx" onclick="hideWindow('login');showWindow('getpassword', this.href);" accesskey="g" title="忘记密码 (ALT + G)" class="xg2">找回密码</a> </p>
+            </div>
+        </div>
+        <div class="fsb pns cl"> <input type="submit" style="width:0;filter:alpha(opacity=0);-moz-opacity:0;opacity:0;" /> <button name="login" type="submit" id="login" tabindex="1005" onclick="javascript:qqlogout();" class="pn"><span>登录</span></button> <input type="checkbox"
+                value="43200" tabindex="1006" id="expires" name="expires" checked/> <label for="expires"><span title="下次访问自动登录">记住我</span></label>
+            <div id="bindUser" class="otherLogin"> <span id="qqLoginBtnTwo" class="qqLoginBtn" style="display:block"></span>
+                <div style="display:block; float:right" class="rL"> </div>
+            </div>
+            <script type="text/javascript">
+                //调用QC.Login方法，指定btnId参数将按钮绑定在容器节点中 QC.Login({ //btnId：插入按钮的节点id，必选 btnId: "qqLoginBtnTwo", //用户需要确认的scope授权项，可选，默认all scope: "all", //按钮尺寸，可用值[A_XL| A_L| A_M| A_S| B_M| B_S| C_S]，可选，默认B_S size: "A_M" }, function (reqData, opts) {//登录成功 //alert("这是login.htm的回调！"); //top.window.location='http://bbs.anjian.com/index.aspx'; }, function (opts) {//注销成功 //setLoginDisp(); alert('QQ登录 注销成功'); top.window.location="http://bbs.anjian.com/index.aspx"; } );
+            </script>
+        </div>
+        <script type="text/javascript">
+            document.getElementById("username").focus();
+        </script>
+    </form>
+    </div>
+    </div>
+</body>
+
+</html>
